@@ -12,11 +12,11 @@ public class Retangulo {
 		
 	}
 	public Double perimetro() {
-		return (largura * 2) + (altura * 2);
+		return 2 * (largura + altura);
 	}
 	
 	public Double diagonal() {
-		return Math.sqrt((Math.pow(altura, 2) + Math.pow(largura, 2)));
+		return Math.sqrt(altura * altura + largura * largura)
 	}
 	
 		public static void main(String[] args) {
