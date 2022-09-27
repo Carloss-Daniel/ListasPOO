@@ -2,15 +2,15 @@ package exercicio3;
 import java.util.Scanner;
 public class Empregado {
 	private String nome;
-	private Double salarioBruto;
-	private Double imposto;
+	private double salarioBruto;
+	private double imposto;
 	
 
-	public Double SalarioLiquido() {
+	public double SalarioLiquido() {
 		return salarioBruto - imposto;
 	}
 	
-	public void IncrementoSalario(Double porcentagem) {
+	public void IncrementoSalario(double porcentagem) {
 		this.salarioBruto = salarioBruto + (salarioBruto * (porcentagem/100));
 		
 	}
@@ -23,19 +23,19 @@ public class Empregado {
 		this.nome = nome;
 	}
 
-	public Double getSalarioBruto() {
+	public double getSalarioBruto() {
 		return salarioBruto;
 	}
 
-	public void setSalarioBruto(Double salarioBruto) {
+	public void setSalarioBruto(double salarioBruto) {
 		this.salarioBruto = salarioBruto;
 	}
 
-	public Double getImposto() {
+	public double getImposto() {
 		return imposto;
 	}
 
-	public void setImposto(Double imposto) {
+	public void setImposto(double imposto) {
 		this.imposto = imposto;
 	}
 	@Override
