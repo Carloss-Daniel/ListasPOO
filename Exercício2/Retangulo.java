@@ -1,22 +1,21 @@
 package exercicio2;
-
 import java.util.Scanner;
 
 public class Retangulo {
-	private Double largura;
-	private Double altura;
+	private double largura;
+	private double altura;
 	
 	
-	public Double area() {
+	public double area() {
 		return largura * altura;
 		
 	}
-	public Double perimetro() {
-		return 2 * (largura + altura);
+	public double perimetro() {
+		return 2 * (largura  + altura);
 	}
 	
-	public Double diagonal() {
-		return Math.sqrt(altura * altura + largura * largura)
+	public double diagonal() {
+		return Math.sqrt(altura * altura + largura * largura);
 	}
 	
 		public static void main(String[] args) {
@@ -34,3 +33,4 @@ public class Retangulo {
             sc.close();			
 		}
 }
+
