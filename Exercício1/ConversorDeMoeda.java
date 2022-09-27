@@ -2,12 +2,12 @@ package exercicio1;
 import java.util.Scanner;
 
 public class ConversorDeMoeda {
-	private Double dolar;
-	private Double quantidade;
+	private double dolar;
+	private double quantidade;
 	
-	public Double conversao() {
+	public double conversao() {
 		
-		return (dolar * 2 * 0.06) * quantidade;
+		return (dolar + dolar * 0.06) * quantidade;
 		
 	}
 	public static void main(String[] args) {
